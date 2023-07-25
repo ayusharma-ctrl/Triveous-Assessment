@@ -2,11 +2,20 @@
 import { createSlice } from '@reduxjs/toolkit'
 //we are using createSlice method for reducer instead of using createReducer method
 
+// Function to check if localStorage is available (runs on the client-side)
+const isLocalStorageAvailable = () => typeof window !== 'undefined' && window.localStorage;
+
 //this is a reducer
 //STORENEWSDATA, TOGGLEVIEW.. these are the different actions
 export const newsDataReducer = createSlice({
     name: 'newsData',
-    initialState: JSON.parse(localStorage.getItem("news")) || {
+    initialState: isLocalStorageAvailable() ? JSON.parse(localStorage.getItem("news")) || {
+        news: null,
+        savedNews: null,
+        displayGrid: false,
+        isDialog: false,
+        dialogData: null
+    } : {
         news: null,
         savedNews: null,
         displayGrid: false,
