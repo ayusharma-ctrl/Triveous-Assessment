@@ -39,7 +39,7 @@ const Popular = () => {
         <div className={` ${enabled ? 'grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2' : 'flex flex-wrap justify-evenly gap-4'} `}>
             {
                 newsDataLocal && newsDataLocal.length > 0 ? (
-                    newsDataLocal.map((item, index) => <Card enabled={enabled} key={index} data={item} />)) : "No data found"
+                    newsDataLocal.map((item, index) => <Card enabled={enabled} key={index} data={item} />)) : "No data found. Also Note: Requests from the browser are not allowed on the Developer plan, except from localhost. That's why unable to fetch data."
             }
         </div>
     )
