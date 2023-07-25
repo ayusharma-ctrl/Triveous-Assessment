@@ -1,3 +1,11 @@
+FRONTEND ASSIGNMENT - "News app with Firebase integration"
+
+This Next.js app is designed to fetch news articles from an API, allowing authorized users to access and read news articles even when offline. Users have the option to save their favorite news articles to a personal list. The app implements Google authentication and utilizes Firebase Firestore for data storage. State management is handled using Redux, ensuring smooth and efficient handling of user interactions and data updates.
+
+BACKEND ASSIGNMENT - "E-commerce API with Node.js"
+Link to another repository: https://github.com/ayusharma-ctrl/Quickpick-Fullstack-ReactNative-Nodejs-Express-MongoDB
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
