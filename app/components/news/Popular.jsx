@@ -31,8 +31,8 @@ const Popular = () => {
     }
 
     useEffect(() => {
-        fetchLocalNews()
         fetchPopularNews()
+        fetchLocalNews()
     }, [])
 
     return (
