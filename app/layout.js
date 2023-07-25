@@ -10,10 +10,10 @@ import { ToastContainer } from 'react-toastify'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Triveous',
-  description: 'Created by Ayush',
-}
+// export const metadata = {
+//   title: 'Triveous',
+//   description: 'Created by Ayush',
+// }
 
 export default function RootLayout({ children }) {
   return (
